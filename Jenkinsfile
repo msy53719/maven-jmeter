@@ -19,6 +19,13 @@ pipeline {
                 sh 'sh ./script/excute_test.sh'
             }
         }
+        
+       stage('reprot name') {
+            steps {
+                echo 'modiyf report name'
+                sh 'sh ./script/modify_report_name.sh'
+            }
+        }
     }
     post {
    
