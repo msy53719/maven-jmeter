@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh 'env'
                 echo 'execute test'
-                sh ./script/excute_test.sh
+                sh 'sh ./script/excute_test.sh'
             }
         }
         
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo 'modiyf report name'
                 sh 'pwd'
-                sh  ./script/modify_report_name.sh
+                sh  'sh ./script/modify_report_name.sh'
                 sh 'pwd'
             }
         }
