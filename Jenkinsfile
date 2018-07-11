@@ -20,9 +20,9 @@ pipeline {
             }
         }
         
-       stage('reprot name') {
+       stage('modify name') {
             steps {
-                echo 'modiyf report name'
+                echo 'modify report name'
                 sh 'pwd'
                 sh  'sh ./script/modify_report_name.sh'
                 sh 'pwd'
