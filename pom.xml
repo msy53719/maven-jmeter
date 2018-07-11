@@ -40,8 +40,6 @@
 				</executions>
 				<configuration>
 					<testFilesDirectory>src/test/jmeter/TestScripts/</testFilesDirectory>
-					<jmeterVersion>4.0</jmeterVersion>
-					
 				</configuration>
 			</plugin>
 			<plugin>
