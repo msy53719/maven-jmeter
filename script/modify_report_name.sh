@@ -1,3 +1,2 @@
 #!bin/bash
-cd ../target/jmeter/html1/
-mv *.html  index.html
+mv ./target/jmeter/html1/*.html  ./target/jmeter/html1/index.html
