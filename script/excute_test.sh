@@ -1,3 +1,3 @@
-#!/bin/bash
+#!bin/bash
 cd ..
 mvn clean verify

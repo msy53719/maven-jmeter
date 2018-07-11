@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh 'env'
                 echo 'execute test'
-                sh 'sh ./script/execute_test.sh'
+                sh 'sh ./script/excute_test.sh'
             }
         }
     }
@@ -28,7 +28,7 @@ pipeline {
               allowMissing: false,
               alwaysLinkToLastBuild: false,
               keepAll: true,
-              reportDir: './target/cucumber/',
+              reportDir: './target/jmeter/html1/',
               reportFiles: 'index.html',
               reportName: 'Html Report'
             ]

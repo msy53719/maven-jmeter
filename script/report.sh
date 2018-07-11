@@ -1,0 +1,1 @@
+tar -cvzf test-report.tar.gz ./target/jmeter/html*/
