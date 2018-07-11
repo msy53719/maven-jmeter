@@ -29,13 +29,13 @@ pipeline {
               alwaysLinkToLastBuild: false,
               keepAll: true,
               reportDir: './target/jmeter/html1/',
-              reportFiles: 'index.html',
+              reportFiles: '*.html',
               reportName: 'Html Report'
             ]
             echo 'package report'
             sh 'sh ./script/report.sh'
             archiveArtifacts artifacts: 'test-report*.tar.gz', fingerprint: true
-            emailext attachLog: true, body: '测试报告地址：\n  ${BUILD_URL}/Html_20Report/index.html', compressLog: true, subject: '测试报告地址', to: '479979298@qq.com'
+            emailext attachLog: true, body: '测试报告地址：\n  ${BUILD_URL}/Html_20Report/*.html', compressLog: true, subject: '测试报告地址', to: '479979298@qq.com'
                  
         }
         failure {
